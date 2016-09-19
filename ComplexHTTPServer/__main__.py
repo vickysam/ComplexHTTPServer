@@ -3,11 +3,14 @@
 import SocketServer
 import BaseHTTPServer
 import SimpleHTTPServer
+import sys
+import os
+
+# The absolute path of the directoy for this file:
+_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 class ThreadingSimpleServer(SocketServer.ThreadingMixIn,BaseHTTPServer.HTTPServer):
     pass
-
-import sys
 
 if sys.argv[1:]:
     port = int(sys.argv[1])
