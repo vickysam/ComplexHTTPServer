@@ -20,7 +20,7 @@ Usage
 
 Basic usage::
 
-    $ python ComplexHTTPServer [PORT]
+    $ python -m ComplexHTTPServer [PORT]
 
 Default port is 8000
 
