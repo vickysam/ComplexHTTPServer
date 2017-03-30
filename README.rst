@@ -15,6 +15,10 @@ Install from PyPI::
     $ pip install ComplexHTTPServer
 
 
+Install from Source::
+
+    $ python setup.py install
+
 Usage
 -----
 
