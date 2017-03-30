@@ -4,6 +4,7 @@ ComplexHTTPServer
 ComplexHTTPServer is a Multithreaded Python SimpleHTTPServer.
 Currently Supports Python 2.
 
+[![PyPI](https://img.shields.io/pypi/v/pyapi-gitlab.svg)](https://pypi.python.org/pypi/ComplexHTTPServer)
 
 Installation
 ------------
