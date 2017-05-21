@@ -1,15 +1,15 @@
 #!/bin/env python
 
-import SocketServer
-import BaseHTTPServer
-import SimpleHTTPServer
+import socketserver
+import http.server
+import http.server
 import sys
 import os
 
 # The absolute path of the directoy for this file:
 _ROOT = os.path.abspath(os.path.dirname(__file__))
 
-class ThreadingSimpleServer(SocketServer.ThreadingMixIn,BaseHTTPServer.HTTPServer):
+class ThreadingSimpleServer(socketserver.ThreadingMixIn,http.server.HTTPServer):
     pass
 
 if sys.argv[1:]:
@@ -17,12 +17,12 @@ if sys.argv[1:]:
 else:
     port = 8000
 
-server = ThreadingSimpleServer(('', port), SimpleHTTPServer.SimpleHTTPRequestHandler)
-print "Serving HTTP on 0.0.0.0 port",port,"..."
+server = ThreadingSimpleServer(('', port), http.server.SimpleHTTPRequestHandler)
+print("Serving HTTP on 0.0.0.0 port",port,"...")
 
 try:
     while 1:
         sys.stdout.flush()
         server.handle_request()
 except KeyboardInterrupt:
-    print "Finished"
+    print("Finished")
