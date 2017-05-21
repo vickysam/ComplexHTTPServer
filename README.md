@@ -2,15 +2,12 @@ ComplexHTTPServer
 --------
 
 ComplexHTTPServer is a Multithreaded Python SimpleHTTPServer.
-Currently Supports Python 2.
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vickysam/ComplexHTTPServer/master/LICENSE)
-[![PyPI](https://img.shields.io/badge/v-0.1-blue.svg)](https://pypi.python.org/pypi/ComplexHTTPServer/0.1)
+[![PyPI](https://img.shields.io/badge/v-0.2-blue.svg)](https://pypi.python.org/pypi/ComplexHTTPServer/0.2)
 
 Installation
 ------------
-
-ComplexHTTPServer requires **Python 2.x >= 2.6**.
 
 Install from PyPI::
 
